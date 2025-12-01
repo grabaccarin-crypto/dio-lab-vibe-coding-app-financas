@@ -1,4 +1,4 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App de de Finanças Pessoais
 
 Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
 
@@ -73,13 +73,158 @@ Durante essa etapa, você pode orientar a IA para três entregas principais:
 Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
 No README do seu repositório, inclua:
 
-- Seu **prompt final** (PRD);  
-- Prints ou pequenos vídeos das interações com a IA;  
-- Um resumo do que o seu **App de Finanças Pessoais** faz;  
+- Seu **prompt final** (PRD);
+- PRD refinado no Copilot
+  
+```txt  
+# PRD – Aplicativo de Organização de Finanças Pessoais Conversacional
+
+## 1. Objetivo do Produto
+Facilitar o controle financeiro pessoal para iniciantes por meio de uma interface conversacional simples e intuitiva, eliminando a necessidade de planilhas complexas e entradas manuais extensas.
+
+---
+
+## 2. Problema a Resolver
+- Usuários desistem de controlar gastos porque os apps atuais são burocráticos e pouco personalizados.
+- Falta de orientação prática para quem está começando a organizar suas finanças.
+
+---
+
+## 3. Público-Alvo
+- Pessoas que querem começar a organizar suas finanças de forma prática e sem complicação.
+- Principalmente iniciantes que nunca usaram apps financeiros ou desistiram por complexidade.
+
+---
+
+## 4. Escopo do MVP
+### Funcionalidades-Chave
+1. Registro de gastos via chat em linguagem natural.
+2. Classificação automática das transações por categoria.
+3. Definição e acompanhamento de metas financeiras.
+4. Dicas de economia fornecidas pelo “Agente Financeiro”.
+5. Relatórios simples e personalizados (gráficos e insights).
+
+---
+
+## 5. Fluxo Principal
+1. **Onboarding**
+   - Pergunta inicial: “Qual seu objetivo financeiro principal?”
+   - Opção para definir meta inicial (ex.: economizar R$500/mês).
+
+2. **Tela de Conversa**
+   - Usuário registra gastos com frases naturais: “Gastei R$50 no mercado.”
+   - App responde: “Anotado! Categoria: Alimentação. Quer definir um limite para isso?”
+
+3. **Tela de Metas**
+   - Exibe metas definidas e progresso visual.
+
+4. **Tela de Relatórios**
+   - Gráficos simples (pizza ou barras) mostrando gastos por categoria.
+   - Insights automáticos: “Você gastou 20% a mais em transporte este mês.”
+
+---
+
+## 6. Exemplos de Interações
+### Onboarding
+- **App:** “Olá! Bem-vindo ao seu assistente financeiro. Qual seu objetivo principal?”
+- **Usuário:** “Quero economizar para uma viagem.”
+- **App:** “Ótimo! Vamos começar definindo uma meta mensal. Quanto você gostaria de economizar?”
+
+### Registro de Gastos
+- **Usuário:** “Gastei R$80 no supermercado.”
+- **App:** “Anotado! Categoria: Alimentação. Quer definir um limite para essa categoria?”
+
+### Consulta de Saldo
+- **Usuário:** “Quanto já gastei este mês?”
+- **App:** “Você gastou R$1.200 até agora. Alimentação é sua maior categoria com R$500.”
+
+### Definição de Meta
+- **Usuário:** “Quero economizar R$300 este mês.”
+- **App:** “Meta definida! Vou te avisar quando estiver perto de atingir.”
+
+### Dicas de Economia
+- **App:** “Percebi que seus gastos com transporte aumentaram 20% este mês. Que tal usar transporte público duas vezes por semana para economizar?”
+
+---
+
+## 7. Requisitos Funcionais
+- NLP para interpretar mensagens (ex.: Dialogflow, Rasa ou LLM).
+- Classificação automática baseada em palavras-chave e histórico.
+- Banco de dados para armazenar gastos, metas e histórico (ex.: Firebase).
+- Interface conversacional com botões rápidos para ações sugeridas.
+
+---
+
+## 8. Critérios de Aceitação
+- Usuário consegue registrar um gasto em menos de 10 segundos via chat.
+- Relatório mensal mostra pelo menos 3 categorias de gastos.
+- Meta definida aparece com barra de progresso atualizada.
+
+---
+
+## 9. Validação Inicial
+- Teste com 10-20 usuários reais.
+- Perguntas-chave:
+  - Foi fácil registrar gastos?
+  - As dicas foram úteis?
+  - Você se sentiu motivado a continuar usando?
+- Métrica de sucesso: Usuário registra 5 transações na primeira semana.
+
+---
+
+## 10. Roadmap Futuro
+- Integração com contas bancárias.
+- Alertas inteligentes (ex.: “Você está perto do limite de alimentação”).
+- Sugestões personalizadas baseadas em comportamento.
+
+---
+
+## 11. Tom e Linguagem
+- Conversa educativa, amigável e sem jargões técnicos.
+- Exemplo:
+  - Usuário: “Gastei R$100 no restaurante.”
+  - App: “Anotado! Isso entra na categoria Alimentação. Quer definir um limite para restaurantes este mês?”
+ ```
+Interações com o Lovable:
+
+> tive apenas direito a uma interação: Utilizando o PRD anexo, crie um aplicativo para controle de finanças pessoais
+
+> tentei uma segunda interação solicitando para criaçção de um botão oara vizualizar os registros diários, mas não foi possível
+
+- Prints ou pequenos vídeos das interações com a IA;
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/4cd9ddbe-eac4-4789-a205-37f8ee034e9b" />
+
+- Um resumo do que o seu **App de Finanças Pessoais** faz;
+Descrição:
+Aplicativo para organização de finanças pessoais com interface de conversa simples e intuitiva. Permite registrar gastos via chat, definir metas e visualizar relatórios sem burocracia.
+
+Objetivo:
+Facilitar o controle financeiro para iniciantes, eliminando planilhas complexas e oferecendo dicas personalizadas.
+
+Principais Funcionalidades:
+- Registro de gastos em linguagem natural.
+- Classificação automática por categoria.
+- Definição e acompanhamento de metas.
+- Dicas de economia do Agente Financeiro.
+- Relatórios simples com gráficos.
+
+Instruções Iniciais:
+1. Defina seu objetivo financeiro no onboarding.
+2. Registre seus gastos via chat.
+3. Acompanhe metas e relatórios.
+
+Tecnologias sugeridas:
+- NLP (Dialogflow, Rasa ou LLM).
+- Banco de dados (Firebase ou similar).
+- Interface conversacional.
+  
 - Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
-  - O que aprendeu sobre conversar com IAs?
+ ### O que funcionou bem?
+  - A facilidade na criação do aplicativo em si utilizando apenas linguagem natural   
+ ### O que não funcionou como o esperado?
+  - falta de atenção aos detalhes na descrição do produto e a limitação da ferramenta acabou gerando um produto sem alguma funcionalidades  
+ ### O que aprendeu sobre conversar com IAs?
+  - todo o processo do curso tem me ajudado a melhorar o meu desempenho na criação dos prompts para as minhas tarefas diárias no trabalho, a utilização frequente gera insights e mesmo com as limitações determinadas pela empresa tenho conseguido utilizar o Copilot para auxiliar nas minhas atividades.
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
